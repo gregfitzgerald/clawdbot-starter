@@ -11,10 +11,13 @@ model: anthropic/claude-sonnet-4-5
 # This is where AGENTS.md, SOUL.md, and other files live
 workdir: /home/YOUR_USERNAME/clawdbot-starter
 
-# Anthropic API key
-# Get one at: https://console.anthropic.com
-anthropic:
-  apiKey: "sk-ant-..."
+# Authentication - uses OAuth (same as Claude Code)
+# Run `clawdbot login` to authenticate with your Claude Pro/Max account
+auth:
+  profiles:
+    anthropic:claude-cli:
+      provider: anthropic
+      mode: oauth
 
 # Discord configuration
 discord:

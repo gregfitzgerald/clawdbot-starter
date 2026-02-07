@@ -91,14 +91,16 @@ anthropic:
 2. Right-click on yourself in any server
 3. Click **Copy User ID**
 
-### Getting Your Anthropic API Key
+### Authenticating with Claude
 
-If using Claude Pro subscription through the API:
-1. Go to https://console.anthropic.com
-2. Create an API key
-3. Add it to the config
+Clawdbot uses the same OAuth authentication as Claude Code. No separate API key needed!
 
-**Or** if you only have Claude Pro (not API access), you may need to sign up for API access separately.
+```bash
+# This will open a browser to authenticate with your Claude account
+clawdbot login
+```
+
+Sign in with your Claude Pro/Max account and you're set.
 
 ## Step 6: Start Clawdbot
 
