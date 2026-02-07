@@ -1,0 +1,56 @@
+# Clawdbot Configuration Example
+# Copy this to ~/.clawdbot/config/clawdbot.yml and fill in your values
+
+version: "1.0"
+
+# Model - using Sonnet 4.5 for efficiency
+# Options: anthropic/claude-sonnet-4-5, anthropic/claude-opus-4, etc.
+model: anthropic/claude-sonnet-4-5
+
+# Your workspace directory
+# This is where AGENTS.md, SOUL.md, and other files live
+workdir: /home/YOUR_USERNAME/clawdbot-starter
+
+# Anthropic API key
+# Get one at: https://console.anthropic.com
+anthropic:
+  apiKey: "sk-ant-..."
+
+# Discord configuration
+discord:
+  enabled: true
+  
+  # Bot token from Discord Developer Portal
+  # See SETUP.md for how to get this
+  token: "YOUR_BOT_TOKEN"
+  
+  # Who can talk to the bot (Discord user IDs)
+  # Enable Developer Mode in Discord, right-click yourself, Copy User ID
+  allowlist:
+    - "YOUR_DISCORD_USER_ID"
+  
+  # Optional: Limit to specific channels
+  # channels:
+  #   - "channel_id_here"
+  
+  # Optional: Allow DMs
+  # allowDMs: true
+
+# Heartbeat - periodic check-ins
+heartbeat:
+  enabled: true
+  intervalMinutes: 30
+  
+  # Custom heartbeat prompt (optional)
+  # prompt: "Check HEARTBEAT.md and follow instructions."
+
+# Optional: Browser automation
+# browser:
+#   enabled: true
+#   headless: true
+#   noSandbox: true  # Required for WSL
+
+# Optional: Memory search (requires embedding API)
+# memory:
+#   enabled: true
+#   provider: openai  # or google
