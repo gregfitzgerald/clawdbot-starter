@@ -44,13 +44,15 @@ npm install -g clawdbot
 
 ### 3. Discord Bot Setup
 
-**This requires the human to do some clicking in the browser.**
+**See `DISCORD-BOT-SETUP.md` for detailed instructions.**
 
-Walk them through `SETUP.md` - they need to:
+This can be done by the human OR by someone helping them:
 1. Create a Discord Application at https://discord.com/developers/applications
 2. Create a bot and get the token
-3. Enable required intents
-4. Add the bot to their server
+3. Enable all three Privileged Gateway Intents (critical!)
+4. Add the bot to a server
+
+If someone else created the bot, just get the token from them.
 
 ### 4. Configure Clawdbot
 

@@ -1,52 +1,21 @@
-# Discord Bot Setup Guide
+# Setup Guide
 
-This guide walks through creating a Discord bot and connecting it to Clawdbot.
+This guide walks through setting up Clawdbot with Discord.
 
-## Step 1: Create a Discord Application
+## Discord Bot Setup
 
-1. Go to https://discord.com/developers/applications
-2. Click **"New Application"** (top right)
-3. Give it a name (this will be your bot's name, e.g., "Moltie")
-4. Accept the terms and click **Create**
+**See `DISCORD-BOT-SETUP.md` for the complete step-by-step guide.**
 
-## Step 2: Create the Bot User
+That document covers:
+- Creating the Discord application and bot
+- Getting the bot token
+- Enabling required intents (critical!)
+- Generating the invite link
+- Adding the bot to a server
+- Getting your User ID
+- Troubleshooting common issues
 
-1. In the left sidebar, click **"Bot"**
-2. Click **"Add Bot"** and confirm
-3. Under the bot's username, click **"Reset Token"**
-4. Copy the token and save it somewhere safe - **you'll need this for configuration**
-   - ⚠️ Never share this token publicly!
-
-## Step 3: Configure Bot Settings
-
-On the same Bot page:
-
-1. **Public Bot**: Turn OFF (only you can add it to servers)
-2. **Requires OAuth2 Code Grant**: Leave OFF
-3. Scroll down to **Privileged Gateway Intents** and enable:
-   - ✅ **Presence Intent**
-   - ✅ **Server Members Intent**
-   - ✅ **Message Content Intent** (REQUIRED - bot won't see messages without this!)
-
-4. Click **Save Changes**
-
-## Step 4: Generate Invite Link
-
-1. In the left sidebar, click **"OAuth2"** → **"URL Generator"**
-2. Under **Scopes**, check:
-   - ✅ `bot`
-   - ✅ `applications.commands`
-3. Under **Bot Permissions**, check:
-   - ✅ Send Messages
-   - ✅ Send Messages in Threads
-   - ✅ Embed Links
-   - ✅ Attach Files
-   - ✅ Read Message History
-   - ✅ Add Reactions
-   - ✅ Use Slash Commands
-4. Copy the generated URL at the bottom
-5. Open that URL in your browser
-6. Select your server and click **Authorize**
+**Note:** The Discord bot can be created by anyone - if someone technical is helping you set up, they can create the bot and give you the token. You don't need to do it yourself.
 
 ## Step 5: Create Clawdbot Config
 
