@@ -6,6 +6,25 @@ A ready-to-go personal assistant agent for Discord, powered by Clawdbot.
 
 If you're Claude Code helping a human set up this agent, follow these steps:
 
+### 0. Import Conversation History (Optional but Recommended)
+
+Before anything else, help the human export their existing Claude.ai conversations. This lets you understand them from day one.
+
+**Walk them through `CONVERSATION-IMPORT.md`:**
+1. Install Tampermonkey browser extension
+2. Install Lyra Exporter Fetch script
+3. Go to claude.ai and export "Full Account"
+4. Save the JSON to `data/conversation-history.json`
+
+**Then analyze the conversations:**
+- Read `scripts/analyze-conversations.md` for instructions
+- Parse the JSON, identify patterns, preferences, and context
+- Update USER.md and MEMORY.md with your findings
+- Create `memory/conversation-insights.md` with detailed analysis
+- Discuss findings with the human to verify accuracy
+
+This step is optional but highly valuable - it gives the agent a head start on understanding the human.
+
 ### 1. Prerequisites Check
 
 ```bash
